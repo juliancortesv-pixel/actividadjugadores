@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(45, 155, 86, 0.12),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #06140c 0%,
+            #0b2415 50%,
+            #030b06 100%
+        );
+
+    font-family: Arial, sans-serif;
+
+    color: #ffffff;
+}
+
+.Centrar {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 900px;
+
+    margin: 15px auto;
+    padding: 18px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(18, 48, 29, 0.95),
+            rgba(5, 15, 9, 0.98)
+        );
+
+    border: 1px solid rgba(212, 175, 55, 0.55);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 0 1px rgba(45, 155, 86, 0.08),
+        0 10px 30px rgba(0, 0, 0, 0.65),
+        0 0 30px rgba(45, 155, 86, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.Centrar::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2d9b56,
+            #d4af37,
+            transparent
+        );
+}
+
+.Centrar::after {
+    content: '';
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -120px;
+    right: -80px;
+
+    background: rgba(45, 155, 86, 0.12);
+
+    border-radius: 50%;
+
+    filter: blur(35px);
+
+    pointer-events: none;
+}
+
+.Centrar:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(212, 175, 55, 0.85);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.75),
+        0 0 35px rgba(45, 155, 86, 0.15);
+}
+
+.Imgen {
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    border: 2px solid rgba(212, 175, 55, 0.65);
+
+    padding: 4px;
+
+    background: #07170d;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 175, 55, 0.06),
+        0 10px 25px rgba(0, 0, 0, 0.6);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.ImagenInteractiva {
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.ImagenInteractiva:hover {
+    transform: scale(1.05);
+
+    filter: brightness(1.1);
+
+    box-shadow:
+        0 0 25px rgba(45, 155, 86, 0.25),
+        0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.Orga {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    padding: 18px 20px;
+}
+
+.Titulo {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-family: "Elsie", cursive;
+
+    font-size: 32px;
+
+    line-height: 1.1;
+
+    color: #ffffff;
+
+    text-shadow:
+        2px 2px 0 #0a4a24,
+        0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Titulo::after {
+    content: '';
+
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    margin-top: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d4af37,
+            #2d9b56
+        );
+}
+
+.Orga p {
+    margin-top: 8px;
+
+    color: #d9e4dc;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+button {
+    width: fit-content;
+
+    padding: 11px 18px;
+
+    margin-top: 10px;
+
+    border: 1px solid rgba(212, 175, 55, 0.6);
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #176b38,
+            #0d4325
+        );
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    letter-spacing: 0.03em;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #238c4b,
+            #126131
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(45, 155, 86, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.Extra {
+    position: relative;
+
+    margin-top: 10px;
+
+    padding: 13px 15px;
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(45, 155, 86, 0.10),
+            rgba(0, 0, 0, 0.20)
+        );
+
+    border-left: 3px solid #d4af37;
+
+    color: #dfe9e2 !important;
+
+    line-height: 1.5;
+
+    box-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.Formulario {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 550px;
+
+    margin: 45px auto;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(13, 38, 22, 0.98),
+            rgba(4, 13, 8, 0.98)
+        );
+
+    border: 1px solid rgba(212, 175, 55, 0.55);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.65),
+        0 0 30px rgba(45, 155, 86, 0.08);
+}
+
+.Formulario::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2d9b56,
+            #d4af37,
+            #2d9b56
+        );
+}
+
+.Formulario h2 {
+    text-align: center;
+
+    color: #ffffff;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-family: "Elsie", cursive;
+
+    font-size: 30px;
+
+    text-shadow:
+        2px 2px 0 #0a4a24,
+        0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Formulario h2::after {
+    content: '';
+
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    margin: 10px auto 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d4af37,
+            transparent
+        );
+}
+
+.Formulario label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+    color: #d4af37;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+}
+
+.Formulario input {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #31543d;
+
+    border-radius: 6px;
+
+    background:
+        rgba(3, 12, 7, 0.85);
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.Formulario input:focus {
+    border-color: #2d9b56;
+
+    background: rgba(6, 24, 13, 0.95);
+
+    box-shadow:
+        0 0 0 3px rgba(45, 155, 86, 0.12);
+}
+
+
+.Formulario input::placeholder {
+    color: #718078;
+}
+
+.Formulario button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    border: 1px solid #d4af37;
+
+    background:
+        linear-gradient(
+            135deg,
+            #176b38,
+            #0b3b20
+        );
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.06em;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.Formulario button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #269653,
+            #145f31
+        );
+
+    box-shadow:
+        0 8px 25px rgba(45, 155, 86, 0.25);
+}
+
+.BotonesFormulario {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.BotonesFormulario button {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid rgba(212, 175, 55, 0.5);
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123d23,
+            #092414
+        );
+
+    color: #d4af37;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.BotonesFormulario button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #1b6537,
+            #0e3c20
+        );
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .Centrar {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+    .Imgen {
+        width: 180px;
+        height: 180px;
+    }
+
+    .Orga {
+        align-items: center;
+
+        padding: 15px 5px;
+    }
+
+    .Titulo::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Extra {
+        text-align: left;
+    }
+
+    .Formulario {
+        padding: 24px 18px;
+    }
+
+    .BotonesFormulario {
+        flex-direction: column;
+    }
+
+    .BotonesFormulario button {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .Centrar,
+    .Imgen,
+    .ImagenInteractiva,
+    button,
+    .Formulario input {
+        transition: none;
+    }
+}
+
+.EncabezadoJugadores {
+    max-width: 900px;
+    margin: 20px auto 30px;
+    text-align: center;
+}
+
+.EncabezadoJugadores h1 {
+    margin-bottom: 8px;
+    color: #d4af37;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.EncabezadoJugadores p {
+    color: #d9e4dc;
+}
+
+.ListaJugadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+    gap: 12px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.ListaJugadores .Centrar {
+    width: 100%;
+    margin: 0;
+}
+
+.Formulario textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #31543d;
+    border-radius: 6px;
+    background: rgba(3, 12, 7, 0.85);
+    color: #fff;
+    font: inherit;
+    resize: vertical;
+}
+
+.Formulario textarea:focus {
+    border-color: #2d9b56;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(45, 155, 86, 0.12);
+}
+
+.MensajeFormulario {
+    color: #d4af37 !important;
+    text-align: center;
+    font-weight: bold;
+}

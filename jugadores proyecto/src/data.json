@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "title": "Lamine Yamal",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/1/13/Lamine_Yamal_France_v_Spain_7.24.26-142.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original",
+        "descripcion": "Lamine Yamal es un futbolista español del FC Barcelona. Juega principalmente como extremo derecho y utiliza el dorsal 10. Destaca por su regate, creatividad y capacidad para generar ocasiones de gol.",
+        "extra": "Nació en 2007 y se formó en La Masia. A pesar de su juventud, se convirtió rápidamente en uno de los jugadores más importantes del Barcelona y de la selección española.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 2,
+        "title": "Michael Olise",
+        "img": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1:1,c_fill,g_custom,w_768/v1785247524/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/michael-olise.png",
+        "descripcion": "Michael Olise es un futbolista francés del Bayern Múnich. Juega principalmente como extremo derecho y utiliza el dorsal 17. Destaca por su técnica, regate y capacidad para asistir a sus compañeros.",
+        "extra": "Nació en Londres y representa a la selección de Francia. Es zurdo y también puede jugar como mediapunta gracias a su habilidad para crear ocasiones.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 3,
+        "title": "Harry Kane",
+        "img": "https://img.fcbayern.com/image/upload/f_auto/q_auto/t_cms-1x1-seo/v1785247532/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/harry-kane.png",
+        "descripcion": "Harry Kane es un delantero inglés que juega en el Bayern Múnich con el dorsal 9. Es reconocido por su capacidad goleadora, juego aéreo y habilidad para participar en la creación de juego.",
+        "extra": "Además de ser un gran goleador, Kane suele retroceder para asociarse con sus compañeros y generar oportunidades. También es uno de los principales referentes de la selección inglesa.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 4,
+        "title": "Jude Bellingham",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrtMQ4KoDmJO55wIaXWUWiPp_gg_f99jdiFwUT4oMEOppmd9pbbsanGuuD&s=10",
+        "descripcion": "Jude Bellingham es un centrocampista inglés del Real Madrid. Lleva el dorsal 5 y destaca por su llegada al área, conducción de balón, físico y capacidad para participar tanto en ataque como en defensa.",
+        "extra": "Llegó al Real Madrid en 2023 procedente del Borussia Dortmund y rápidamente se convirtió en una pieza importante del equipo. Puede participar tanto en la construcción como en la finalización de las jugadas.",
+        "color": "#4b1f6f"
+    },
+
+    {
+        "id": 5,
+        "title": "Anthony Gordon",
+        "img": "https://www.fcbarcelona.com/photo-resources/2026/07/21/ed2e1925-057d-428d-a216-96d401a4c25f/00-Gordon.png?height=790&width=670",
+        "descripcion": "Anthony Gordon es un futbolista inglés del FC Barcelona. Juega principalmente como extremo izquierdo y utiliza el dorsal 17. Destaca por su velocidad, potencia física, desborde y capacidad para presionar a los defensores rivales.",
+        "extra": "Nació en Liverpool en 2001 y pasó por las categorías inferiores del Everton. Posteriormente destacó en el Newcastle United antes de fichar por el Barcelona en 2026. También es internacional con la selección inglesa.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 6,
+        "title": "Luis Díaz",
+        "img": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247487/cms/public/images/fcbayern-com/players/spielerportraits/teaser/luis-diaz.png",
+        "descripcion": "Luis Díaz es un futbolista colombiano del Bayern Múnich. Juega principalmente como extremo izquierdo y utiliza el dorsal 14. Destaca por su velocidad, regate, explosividad y capacidad para desequilibrar en el uno contra uno.",
+        "extra": "Nació en Barrancas, Colombia, en 1997. Comenzó su carrera profesional en el fútbol colombiano y posteriormente pasó por el Porto y el Liverpool antes de llegar al Bayern Múnich en 2025. Es una de las principales figuras de la selección colombiana.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 7,
+        "title": "Ousmane Dembélé",
+        "img": "https://www.ogol.com.br/img/planteis/new/89/65/11528965_ousmane_dembele_20240707033609.jpg",
+        "descripcion": "Ousmane Dembélé es un futbolista francés del Paris Saint-Germain. Juega principalmente como extremo derecho y utiliza el dorsal 10. Destaca por su velocidad, habilidad con ambos pies, regate y capacidad para superar defensores.",
+        "extra": "Nació en Vernon, Francia, en 1997. Ha jugado en clubes importantes como Borussia Dortmund y Barcelona antes de llegar al PSG en 2023. En 2025 ganó el Balón de Oro tras una temporada extraordinaria y se convirtió en una de las grandes figuras del fútbol mundial.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 8,
+        "title": "Kylian Mbappé",
+        "img": "https://www.zerozero.pe/img/planteis/new/98/23/11139823_kylian_mbappe_20240925173008.jpg",
+        "descripcion": "Kylian Mbappé es un futbolista francés del Real Madrid. Juega principalmente como delantero y utiliza el dorsal 10. Es reconocido por su velocidad extraordinaria, capacidad goleadora, aceleración y habilidad para atacar los espacios.",
+        "extra": "Nació en París, Francia, en 1998. Comenzó a destacar en el Mónaco y posteriormente se convirtió en una de las grandes estrellas del Paris Saint-Germain. En 2024 llegó al Real Madrid, donde continúa consolidándose como uno de los mejores delanteros del mundo.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 9,
+        "title": "Nico Paz",
+        "img": "https://cdn-img.staticzz.com/img/planteis/new/34/13/14903413_nico_paz_20260101143540.png",
+        "descripcion": "Nico Paz es un futbolista argentino del Como 1907. Juega principalmente como mediapunta y utiliza el dorsal 10. Destaca por su visión de juego, técnica, creatividad, conducción y capacidad para generar ocasiones de gol.",
+        "extra": "Nació en Santa Cruz de Tenerife, España, en 2004, y representa a la selección argentina. Se formó en las categorías inferiores del Real Madrid antes de incorporarse al Como italiano. En 2026 continúa jugando en el fútbol italiano, donde se ha consolidado como uno de los jóvenes talentos más interesantes.",
+        "color": "#4b1f6f"
+    },
+    {
+        "id": 10,
+        "title": "Arda Güler",
+        "img": "https://cdn-img.staticzz.com/img/planteis/new/93/79/8729379_arda_guler_20250924200432.jpg",
+        "descripcion": "Arda Güler es un futbolista turco del Real Madrid. Juega principalmente como mediapunta o centrocampista ofensivo y utiliza el dorsal 15. Destaca por su extraordinaria zurda, visión de juego, precisión en los pases y capacidad para crear oportunidades.",
+        "extra": "Nació en Ankara, Turquía, en 2005. Comenzó a destacar en el Fenerbahçe antes de fichar por el Real Madrid en 2023. Es considerado uno de los jóvenes talentos más prometedores de Europa y también es una pieza importante de la selección turca.",
+        "color": "#4b1f6f"
+    }
+]
